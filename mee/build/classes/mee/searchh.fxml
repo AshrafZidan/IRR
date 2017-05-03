@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="546.0" prefWidth="704.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mee.SearchController">
+    <stylesheets>
+        <URL value="@search.css" />
+    </stylesheets>
+    
+   <children>
+      <JFXButton fx:id="search" layoutX="491.0" layoutY="296.0" onAction="#searchButtonAction" prefHeight="37.0" prefWidth="116.0" style="-fx-background-color: #080;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="browse" layoutX="480.0" layoutY="94.0" onAction="#browesfile" prefHeight="37.0" prefWidth="121.0" style="-fx-background-color: #080;" text="Browse" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <Label layoutX="269.0" layoutY="25.0" prefHeight="52.0" prefWidth="280.0" text="Search IT Easy" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField layoutX="227.0" layoutY="94.0" prefHeight="37.0" prefWidth="254.0" />
+      <Label layoutX="46.0" layoutY="104.0" text="Chose Search Directory" textFill="#23d615">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="307.0" text="Enter Search Key" textFill="#23d615">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="resultTextArea" layoutX="1.0" layoutY="352.0" maxWidth="736.0" minWidth="618.0" prefHeight="194.0" prefWidth="736.0" text="Search Results.">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="18.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton layoutX="688.0" layoutY="9.0" onAction="#exitButtonAction" prefHeight="25.0" prefWidth="35.0" style="-fx-background-color: #f00;" text="X">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txt1" focusColor="WHITE" layoutX="198.0" layoutY="299.0" maxWidth="232.0" minWidth="232.0" prefHeight="31.0" prefWidth="232.0" promptText="Enter Query" unFocusColor="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="show" layoutX="491.0" layoutY="236.0" onAction="#showInverted_index" prefHeight="37.0" prefWidth="116.0" style="-fx-background-color: #080;" text="Show" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
